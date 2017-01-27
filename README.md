@@ -1,8 +1,8 @@
 ## Install
 
 ```bash
-git clone repo
-ln -s ~/git/.global_bash_profile ~/.global_bash_profile
+git clone https://github.com/rcaloras/dotfiles.git
+ln -s "$PWD/dotfiles/.global_bash_profile" ~/.global_bash_profile
 ```
 
 Add to your bash profile.
