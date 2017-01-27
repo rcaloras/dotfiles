@@ -1,5 +1,3 @@
-# Global Dotfiles
-
 ## Install
 
 ```bash
