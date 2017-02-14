@@ -1,1 +1,7 @@
 stty -ixon
+export EDITOR="vim"
+
+# Helpers
+findvim() {
+  vim $(find . -name "$1" | head -n 1)
+}
