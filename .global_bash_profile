@@ -5,3 +5,5 @@ export EDITOR="vim"
 findvim() {
   vim $(find . -name "$1" | head -n 1)
 }
+
+alias free_memory="python ~/git/dotfiles/.scripts/mem_report.py"
