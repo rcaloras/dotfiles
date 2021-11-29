@@ -1,0 +1,5 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/web/commons/api'
+let g:netrw_dirhist_2='/web/commons/api/src'
+let g:netrw_dirhist_3='/web/svc-mercury/config'
