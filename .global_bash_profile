@@ -6,7 +6,7 @@ findvim() {
   vim $(find . -name "$1" | head -n 1)
 }
 
-alias free_memory="python ~/git/dotfiles/.scripts/mem_report.py"
+alias free_memory="python3 ~/git/dotfiles/.scripts/mem_report.py"
 
 vm_stat_mem() {
  vm_stat | perl -ne '/page size of (\d+)/ and $size=$1; /Pages\s+([^:]+)[^\d]+(\d+)/ and printf("%-16s % 16.2f Mi\n", "$1:", $2 * $size / 1048576);'
