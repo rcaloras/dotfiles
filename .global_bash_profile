@@ -1,6 +1,9 @@
 stty -ixon
 export EDITOR="vim"
-
+export CLICOLOR=1
+export LSCOLORS=Exfxcxdxbxegedabagacad
+alias ls='ls -G'
+alias ll='ls -Gla'
 # Helpers
 findvim() {
   vim $(find . -name "$1" | head -n 1)
