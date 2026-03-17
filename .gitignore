@@ -1,0 +1,15 @@
+# Vim
+vimfiles/.vim/.netrwhist
+*.swp
+*.swo
+*~
+*.un~
+
+# macOS
+.DS_Store
+._*
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
