@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python3
 
 import subprocess
 import re
@@ -27,7 +27,7 @@ vmStats = {}
 for row in range(1,len(vmLines)-2):
     rowText = vmLines[row].strip()
     rowElements = sep.split(rowText)
-    vmStats[(rowElements[0])] = int(rowElements[1].strip('\.')) * 4096
+    vmStats[(rowElements[0])] = int(rowElements[1].strip('.')) * 4096
 
 print('Wired Memory:\t\t%d MB' % ( vmStats["Pages wired down"]/1024/1024 ))
 print('Active Memory:\t\t%d MB' % ( vmStats["Pages active"]/1024/1024 ))

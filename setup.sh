@@ -10,11 +10,11 @@ if [ -f ~/.global_bash_profile ]; then
 fi
 '
 
-ln -s "$PWD/.global_bash_profile" ~/.global_bash_profile
+ln -sf "$PWD/.global_bash_profile" ~/.global_bash_profile
 
 # Link Vim
-ln -s "$PWD/vimfiles/.vimrc" ~/.vimrc
-ln -s "$PWD/vimfiles/.vim" ~/.vim
+ln -sf "$PWD/vimfiles/.vimrc" ~/.vimrc
+ln -sf "$PWD/vimfiles/.vim" ~/.vim
 
 
 # Add our file to our bashprofile if it doesn't exist yet
@@ -23,12 +23,12 @@ then
     :
 else
     echo "$bash_profile_hook" >> "$HOME/.bashrc"
- fi
+fi
 
- # Add our file to our zsh profile if it doesn't exist yet
+# Add our file to our zsh profile if it doesn't exist yet
 if grep -q "source ~/.global_bash_profile" "$HOME/.zshrc"
 then
     :
 else
     echo "$bash_profile_hook" >> "$HOME/.zshrc"
- fi
+fi
